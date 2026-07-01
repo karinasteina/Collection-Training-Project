@@ -2,7 +2,7 @@
 
 Starter project for M4 practical task: Collections, Files, and Streams.
 
-## Task
+## Task - DONE
 Build a small Java application that:
 1. Parses and validates shelter intake CSV rows.
 2. Stores valid data in suitable collections.
@@ -31,23 +31,23 @@ Use Maven wrapper (recommended):
 - macOS/Linux: ./mvnw exec:java
 
 ## Required behavior checklist
-- Skip malformed rows and log warnings with SLF4J.
-- Accept blank age as unknown.
-- Reject non-numeric age values.
-- Parse date format dd.MM.yyyy.
-- Build collections:
+- Skip malformed rows and log warnings with SLF4J. - DONE
+- Accept blank age as unknown. - DONE
+- Reject non-numeric age values. - DONE
+- Parse date format dd.MM.yyyy. - DONE
+- Build collections: - DONE
   - List<Animal> allAnimals
   - Set<String> uniqueSpecies
   - Map<String, List<Animal>> animalsBySpecies
   - List<String> animalsNeedingVetInput
-- Report includes:
+- Report includes: - DONE
   - total imported and total skipped
   - unique species list
   - per-species totals and vaccinated counts
   - oldest animal per species (excluding unknown ages)
   - needs-vet-input line in format name(species)
 
-## Stretch goals
+## Stretch goals - did not have enough time :(
 - Sort report sections alphabetically by species.
 - Use Optional for missing ages.
 - Add JSON summary export.
