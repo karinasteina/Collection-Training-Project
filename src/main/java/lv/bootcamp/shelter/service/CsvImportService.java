@@ -99,7 +99,7 @@ public class CsvImportService {
         }
 
         int importedRows = allAnimals.size();
-        return new ImportResult(allAnimals, skippedRows);
+        return new ImportResult(allAnimals, skippedRows, importedRows);
 
     }
     private boolean isNumeric(String str){
